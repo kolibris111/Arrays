@@ -166,15 +166,11 @@ public class Main {
         //Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos.
         // Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti.//
 
-        String res = " " ;
+        //String res = " " ;
 
-        for (int i = 1; i <= 3000; i+=77) {
+        for (int i = 1; i <= 3000; i++) {
             if (i % 77 == 0) {
                 System.out.print(i + ",");
-
-
-
-
             }
         }
 

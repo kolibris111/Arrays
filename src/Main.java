@@ -58,8 +58,8 @@ public class Main {
 
         //Atspausdinkite 3čio uždavinio kiekvieną augalą pradedant nuo paskutinio, ir baigiant pirmuoju. (atvirkščias ciklas).//
 
-        for (int i = 9; i >= augalai.length; i--) {
-            System.out.println(augalai.length);
+        for (int i = augalai.length - 1; i >= 0; i--) {
+            System.out.println(augalai[i]);
         }
 
         System.out.println("****** 6 uzduotis *******");
@@ -166,22 +166,64 @@ public class Main {
         //Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos.
         // Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti.//
 
-        //String res = " " ;
+        String res = "" ;
 
         for (int i = 1; i <= 3000; i++) {
             if (i % 77 == 0) {
                 System.out.print(i + ",");
             }
         }
+        System.out.println("KITAS VARIANTAS");
 
+        for (int i = 1; i <= 3000; i++) {
+            if (i % 77 == 0) {
+                if (!res.isEmpty()) {
+                    res += ",";
+                }
+                res += i;
+            }
+        }
+        System.out.println(res);
 
+        System.out.println("****** 3 uzduotis *******");
+        System.out.println();
+        //Nupieškite kvadratą iš “*”, kurio kraštines sudaro 25“*”.//
 
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 25; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
 
+        System.out.println("KITAS VARIANTAS");
 
+        int k = 25;
+        for (int i = 0; i < k; i++) {
+            for (int j = 0; j < k; j++) {
+                //if (i == 0 || i == k - 1 || j == 0 || j == k - 1) {
+                    System.out.print("* ");
+                // } else {
+               //     System.out.print("  ");
+               // }
+            }
+            System.out.println();
+        }
 
+        System.out.println();
+        System.out.println("****** 4 uzduotis *******");
+        System.out.println();
 
-
-
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 25; j++);
+            {
+            if (i == 0 || i == 25 - 1 || int j == 0 || j == 25 - 1 || i == j || i + j == 25 - 1); {
+                System.out.println("* ");
+            else {
+                System.out.println("O " + "* ");
+            }
+            System.out.println();
+        }
 
 
 

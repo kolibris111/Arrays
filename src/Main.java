@@ -121,6 +121,77 @@ public class Main {
         }
         System.out.println("Zozdiu ilgesniu nei 7 simboliai yra " + a);
 
+        System.out.println("****** 10 uzduotis *******");
+
+        //Suskaičiuokite kiek 3čio uždavinio masyve yra žodžių ilgesnių nei 5 simboliai bet trumpesnių  nei 10 simboliai. (tarp 5 ir 10 simbolių ilgio)//
+
+        int b = 0;
+
+        for (int i = 0; i < augalai.length; i++) {
+
+            if (augalai[i].length() > 5 && augalai[i].length() < 10); {
+                augalai[i].length();
+            }
+        }
+        System.out.println("Zozdiu ilgesniu nei 5 simboliai, bet trumpesniu nei 10 simboliai yra " + augalai[b].length());
+
+        System.out.println("****** SUNKESNES UZDUOTYS *******");
+        System.out.println("****** 1 uzduotis *******");
+
+        //Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos atskirtus tarpais ir
+        //suskaičiuokite kiek tarp jų yra didesnių už 150.  Skaičiai didesni nei 275 turi būti atspausdinti skliausteliuose” [ ] “.//
+
+        int sk = 0;
+
+
+        for (int i = 0; i < 300; i++){
+            int rnd = (int) (Math.random() * 300);
+
+            if (rnd > 150) {
+                sk++;
+            }
+            if (rnd > 275) {
+                sk++;
+                System.out.print("[" + rnd + "] ");
+            } else {
+                System.out.print(rnd + " ");
+            }
+        }
+
+        System.out.println("        ");
+        System.out.println("Skaiciu didesniu uz 150 yra " + sk);
+
+        System.out.println("****** 2 uzduotis *******");
+
+        //Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos.
+        // Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti.//
+
+        String res = " " ;
+
+        for (int i = 1; i <= 3000; i+=77) {
+            if (i % 77 == 0) {
+                System.out.print(i + ",");
+
+
+
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

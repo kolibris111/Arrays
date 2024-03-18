@@ -92,6 +92,22 @@ public class Main {
 
         //Sukurkite ciklą kuris suktųsi nuo 0 iki 20. Suskaičiuokite, kiek kartų kintamasis i turėjo porinę reikšmę;//
 
+        int m = 0;
+        for (int i = 0; i <= 20; i++) {
+            if (i % 2 == 0) {
+                m++;
+            }
+        }
+        System.out.println("Number of even values: " + m);
+
+        //Suskaičiuokite kiek 3čio uždavinio masyve yra žodžių trumpesnių nei 5 simboliai, ir kiek ilgesnių nei 7 simboliai. (du skaičiavimai)//
+
+
+
+
+
+
+
 
 
 
@@ -138,4 +154,4 @@ public class Main {
 
 
     }
-}
+    }

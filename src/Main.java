@@ -1,6 +1,5 @@
 public class Main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         System.out.println("Hello world!");
 
         System.out.println("****** 1 uzduotis *******");
@@ -23,44 +22,44 @@ public class Main {
 
         //Sukurkite masyvą iš dešimties augalų pavadinimų.//
 
-        String[] augalas = new String[10];
+        String[] augalai = new String[10];
 
-        augalas[0] = "Begonija";
-        augalas[1] = "Levanda";
-        augalas[2] = "Roze";
-        augalas[3] = "Tulpe";
-        augalas[4] = "Pakalnute";
-        augalas[5] = "Zibute";
-        augalas[6] = "Saulegraza";
-        augalas[7] = "Aguona";
-        augalas[8] = "Naslaite";
-        augalas[9] = "Azalija";
+        augalai[0] = "Begonija";
+        augalai[1] = "Levanda";
+        augalai[2] = "Roze";
+        augalai[3] = "Tulpe";
+        augalai[4] = "Pakalnute";
+        augalai[5] = "Zibute";
+        augalai[6] = "Saulegraza";
+        augalai[7] = "Aguona";
+        augalai[8] = "Naslaite";
+        augalai[9] = "Azalija";
 
-        for (int i = 0; i < augalas.length; i++) {
-            System.out.println(augalas[i]);
+        for (int i = 0; i < augalai.length; i++) {
+            System.out.println(augalai[i]);
         }
 
         System.out.println("****** 4 uzduotis *******");
 
         // Atspausdinkite kiekvieną 3čio uždavinio augalą atskiroje eilutėje.//
 
-        System.out.println(augalas[0]);
-        System.out.println(augalas[1]);
-        System.out.println(augalas[2]);
-        System.out.println(augalas[3]);
-        System.out.println(augalas[4]);
-        System.out.println(augalas[5]);
-        System.out.println(augalas[6]);
-        System.out.println(augalas[7]);
-        System.out.println(augalas[8]);
-        System.out.println(augalas[9]);
+        System.out.println(augalai[0]);
+        System.out.println(augalai[1]);
+        System.out.println(augalai[2]);
+        System.out.println(augalai[3]);
+        System.out.println(augalai[4]);
+        System.out.println(augalai[5]);
+        System.out.println(augalai[6]);
+        System.out.println(augalai[7]);
+        System.out.println(augalai[8]);
+        System.out.println(augalai[9]);
 
         System.out.println("****** 5 uzduotis *******");
 
         //Atspausdinkite 3čio uždavinio kiekvieną augalą pradedant nuo paskutinio, ir baigiant pirmuoju. (atvirkščias ciklas).//
 
-        for (int i = 9; i >= augalas.length; i--) {
-            System.out.println(augalas.length);
+        for (int i = 9; i >= augalai.length; i--) {
+            System.out.println(augalai.length);
         }
 
         System.out.println("****** 6 uzduotis *******");
@@ -82,7 +81,7 @@ public class Main {
 
         System.out.println("Tai");
         for (int i = 10; i <= 50; i += 2) {
-            if ( i % 10 == 0 ) {
+            if (i % 10 == 0) {
                 continue;
             }
             System.out.println(i);
@@ -100,42 +99,27 @@ public class Main {
         }
         System.out.println("Number of even values: " + m);
 
+        System.out.println("****** 9 uzduotis *******");
+
         //Suskaičiuokite kiek 3čio uždavinio masyve yra žodžių trumpesnių nei 5 simboliai, ir kiek ilgesnių nei 7 simboliai. (du skaičiavimai)//
 
+        int a = 0;
 
+        for (int i = 0; i < augalai.length; i++) {
+            // System.out.println(augalai[i]);//
+            // System.out.println(augalai[i].length());//
+            if (augalai[i].length() < 5) {
+                a++;
+            }
+        }
+        System.out.println("Zozdiu trumpesniu nei 5 simboliai yra " + a);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        for (int i = 0; i < augalai.length; i++) {
+            if (augalai[i].length() > 7) {
+                a++;
+            }
+        }
+        System.out.println("Zozdiu ilgesniu nei 7 simboliai yra " + a);
 
 
 
@@ -154,4 +138,5 @@ public class Main {
 
 
     }
-    }
+}
+

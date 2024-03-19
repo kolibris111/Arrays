@@ -202,10 +202,10 @@ public class Main {
         for (int i = 0; i < k; i++) {
             for (int j = 0; j < k; j++) {
                 //if (i == 0 || i == k - 1 || j == 0 || j == k - 1) {
-                    System.out.print("* ");
+                System.out.print("* ");
                 // } else {
-               //     System.out.print("  ");
-               // }
+                //     System.out.print("  ");
+                // }
             }
             System.out.println();
         }
@@ -214,16 +214,81 @@ public class Main {
         System.out.println("****** 4 uzduotis *******");
         System.out.println();
 
+        //Prieš tai nupieštam kvadratui nupieškite istrižaines zaigzdutę pakeisdami kitu simboliu.//
+
         for (int i = 0; i < 25; i++) {
-            for (int j = 0; j < 25; j++);
-            {
-            if (i == 0 || i == 25 - 1 || int j == 0 || j == 25 - 1 || i == j || i + j == 25 - 1); {
-                System.out.println("* ");
-            else {
-                System.out.println("O " + "* ");
+            for (int j = 0; j < 25; j++) {
+                if (i == j || 25 - i - 1 == j) {
+                    System.out.print("x");
+                } else {
+                    System.out.print("*");
+                }
+                System.out.println();
             }
-            System.out.println();
         }
+
+        System.out.println();
+        System.out.println("****** 5 uzduotis *******");
+        System.out.println();
+
+        //Metam monetą. Monetos kritimo rezultatą imituojam Math.random() funkcija, kur 0 yra herbas, o 1 - skaičius.
+        //Monetos metimo rezultatus išvedame į ekraną atskiroje eilutėje: “S” jeigu iškrito skaičius ir “H” jeigu herbas.
+        //Suprogramuokite tris skirtingus scenarijus kai monetos metimą stabdome:
+        // a) Iškritus herbui;
+        // b) Tris kartus iškritus herbui;
+        // c) Tris kartus iš eilės iškritus herbui;
+
+        int herbas = 0;
+        int skaicius = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,4 +313,5 @@ public class Main {
 
     }
 }
+
 
